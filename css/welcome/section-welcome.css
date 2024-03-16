@@ -1,0 +1,43 @@
+
+@import url('../jugadores/select-name.css');
+@import url('../symbolos/select-symbols.css');
+@import url('../playing/playing.css');
+
+body {
+    background-color: var(--color-black);
+}
+
+.section-welcome-info {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.namewelcome-icono {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.icono-soyfer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: .5rem;
+}
+
+.icono {
+    width: 50px;
+}
+
+.name-icono {
+    color: var(--color-ico);
+}
+
+.punto {
+    color: var(--color-ico);
+}

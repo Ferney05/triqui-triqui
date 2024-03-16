@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title_page">Bienvenido - Triqui Triqui</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="body">
+
+    <main class="main">
+        <section class="section-welcome-info">
+            <div class="namewelcome-icono" id="hidden__welcome">
+                <div class="icono-soyfer">
+                    <img src="img/icono.jpg" class="icono" alt="">
+                    <h2 class="name-icono">suntfer<span class="punto">.</span></h2>
+                </div>
+            </div>
+
+            <div class="playing-start" id="playing_starting">
+                <div class="hidden-playing" id="hidden-playing">
+                    <div class="info_comentarios">
+                        <div class="info_time">
+                            <p class="avisa_turno" id="turno"></p>
+                            <span id="palpita">*</span>
+                        </div>
+
+                        <p class="win-lose-tie" id="show_winner"></p>
+                    </div>
+
+                    <div class="board" id="board">
+                        <div class="cell" data-index="0"></div>
+                        <div class="cell" data-index="1"></div>
+                        <div class="cell" data-index="2"></div>
+                        <div class="cell" data-index="3"></div>
+                        <div class="cell" data-index="4"></div>
+                        <div class="cell" data-index="5"></div>
+                        <div class="cell" data-index="6"></div>
+                        <div class="cell" data-index="7"></div>
+                        <div class="cell" data-index="8"></div>
+                    </div>
+
+                    <div class="botones_reboot_newplay">
+                        <button type="button" class="boton_newplay" id="new_play">Nuevo juego</button>
+                        <button type="button" class="boton_reboot" id="reboot_play">Reiniciar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden_nav-playing" id="hidden_nav_playing">
+                <div class="nav-playing">
+                    <div class="name_points_apuestas">
+                        <div class="nameplayer-puntos">
+                            <p class="name__player" id="name__player1">Ferney</p>
+                            <span class="div-points">
+                                <p class="count-points" id="points_player1">0</p>
+                            </span>
+                        </div>
+
+                        <p class="win_lose" id="player1_money"></p>
+                    </div>
+
+                    <div class="name_points_apuestas">
+                        <div class="block_apuestas">
+                            <p class="text_apostar" id="desblock_modal">Apostar</p>
+                        </div>
+
+                        <p class="apostaron" id="apuesta__"></p>
+                    </div>
+
+                    <div class="name_points_apuestas">
+                        <div class="nameplayer-puntos">
+                            <p class="name__player" id="name__player2">Andrea</p>
+                            <span class="div-points">
+                                <p class="count-points" id="points_player2">0</p>
+                            </span>
+                        </div>
+
+                        <p class="win_lose" id="player2_money"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="select-symbols">
+                <div id="select-symbols">
+                    <h2 class="title-symbols">Selección de simbolos</h2>
+                    <p id="time_wait"></p>
+                    <div class="selecting-symbols">
+                        <div class="player__name">
+                            <p class="info-player" id="info_playerone"></p>
+                            <div class="symbols">
+                                <div class="symbols-x" id="symbol-x1">
+                                    <p class="name-symbols">X</p>
+                                </div>
+                                <div class="symbols-o" id="symbol-o1">
+                                    <p class="name-symbols">O</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="player__name" id="player_nametwo_symbol">
+                            <p class="info-player" id="info_playertwo"></p>
+                            <div class="symbols">
+                                <div class="symbols-x" id="symbol-x2">
+                                    <p class="name-symbols">X</p>
+                                </div>
+                                <div class="symbols-o" id="symbol-o2">
+                                    <p class="name-symbols">O</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-name">
+                <div id="add-name">
+                    <div class="title-breveinfo">
+                        <h2 class="title-add-name">Ingresa los nombres de los jugadores</h2>
+                        <p class="breve-info" id="information_name">Antes de comenzar, proporciona los nombres de los jugadores que participarán.</p>
+                    </div>
+
+                    <form action="" class="formulario">
+                        <div class="players">
+                            <label for="" class="player-ol">Jugador 1</label>
+                            <input type="text" class="input-name" placeholder="Nombre" id="name_playerone" maxlength="12">
+                        </div>
+
+                        <div class="players">
+                            <label for="" class="player-ol">Jugador 2</label>
+                            <input type="text" class="input-name" placeholder="Nombre" id="name_playertwo" maxlength="12">
+                        </div>
+
+                        <div class="button-sigt">
+                            <span>ㅤ</span>
+                            <button type="button" class="boton-next-section" id="boton_next2">Siguiente</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="show-boton-play hidden-modal">
+            <div class="style-modal">
+                <p class="text-ready">¿Ready?, empecemos a jugar</p>
+                <button type="button" class="boton_playstart" id="botonend_play">Jugar</button>
+            </div>
+        </div>
+
+        <div class="none_apuestas" id="none_apuestas">
+            <div class="modal_apuestas">
+                <form action="" class="form_apuestas">
+                    <div class="label_input_apuestas">
+                        <label for="" class="label_apuesta">Cantidad a apostar</label>
+                        <input type="text" class="input_apuestas" placeholder="Ejemplo: 2000" id="input__apuestas" maxlength="5">
+                    </div>    
+    
+                    <div class="boton_apostar" id="boton_apostar_display">
+                        <button type="button" class="apostar_boton" id="apostar_boton">Apostar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="js/code.js"></script>
+</body>
+</html>

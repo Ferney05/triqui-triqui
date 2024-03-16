@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&family=Sigmar&display=swap');
+
+:root {
+    --color-black: #0f0f0f;
+    --color-black-claro: #000000ef;
+    --color-ico: #b13b60;
+    --color-ico-claro: #e61154f1;
+    --color-blue: #326ebd;
+    --color-blue-claro: #cfddf0;
+    --color-gris: #f0f0f0;
+    --color-white: #fff;
+    --color-green-esmeralda: #228049;
+    --color-orange: #e67e22;
+    --color-purpura: #9b59b6;
+    --color-oscuro: #1e1e2c;
+    --color-red-oscuro: #c43a3a;
+
+
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    font-family: var(--font-montserrat);
+}

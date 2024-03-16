@@ -1,0 +1,185 @@
+
+@import url('../modal_apuestas/apuestas.css');
+
+body {
+    background-color: var(--color-oscuro);
+}
+
+#hidden-playing {
+    display: none;
+}
+
+#hidden_nav_playing {
+    display: none;
+}
+
+.hidden_nav-playing {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.playing-start {
+    grid-row: 2 / 7;
+    grid-column: 1 / 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-playing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.nameplayer-puntos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.div-points {
+    background-color: var(--color-ico-claro);
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    border: 2px solid var(--color-ico);
+}
+
+.name__player {
+    color: var(--color-gris);
+}
+
+.count-points {
+    font-weight: 400;
+    color: var(--color-gris);
+}
+
+.info_time {
+    display: flex;
+    gap: .2rem;
+    margin-bottom:.5rem;
+}
+
+.hidden-playing {
+    width: 23%;
+    height: auto;
+    padding: 2rem;
+}
+
+.avisa_turno, .win-lose-tie {
+    color: var(--color-gris);
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.win {
+    font-size: .8rem;
+    color: var(--color-green-esmeralda);
+}
+
+.tie {
+    font-size: .8rem;
+    color: var(--color-red-oscuro);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 1rem;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.botones_reboot_newplay {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.boton_newplay {
+    padding: .8rem 1.5rem;
+    outline: none;
+    border: none;
+    background-color: var(--color-ico-claro);
+    color: var(--color-gris);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.boton_reboot {
+    padding: .8rem 1.5rem;
+    outline: none;
+    border: none;
+    background-color: var(--color-orange);
+    color: var(--color-gris);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.color_text{
+    animation: colorText 3s infinite;
+}
+
+#palpita {
+    color: var(--color-gris);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+@keyframes colorText {
+    0% {
+        color: var(--color-ico);
+    } 
+
+    25% {
+        color: var(--color-gris);
+    }
+
+    75% {
+        color: var(--color-ico);
+    } 
+
+    100% {
+        color: var(--color-gris);
+    }
+}
+
+
+
+/* -------------------- RESPONSIVO -------------------------- */
+
+@media (max-width: 500px){
+    .nav-playing {
+        justify-content: space-around;
+        padding: 0;
+        margin: 0 1rem 0 0;
+    }
+    
+    .info_time {
+        gap: .3rem;
+    }
+    
+    .hidden-playing {
+        width: 70%;
+        margin: 0 0 0 -2rem;
+    }    
+}

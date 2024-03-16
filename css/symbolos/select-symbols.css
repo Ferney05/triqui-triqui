@@ -1,0 +1,143 @@
+
+#select-symbols {
+    display: none;
+    position: absolute;
+}
+
+.select-symbols {
+    grid-row: 2 / 7;
+    grid-column: 1 / 2;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-symbols {
+    color: var(--color-blue-claro);
+    text-align: center;
+}
+
+.info-player {
+    color: var(--color-gris);
+    font-size: .9rem;
+}
+
+.selecting-symbols {
+    margin-top: 2rem;
+}
+
+.symbols {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.symbols-x, .symbols-o {
+    background-color: var(--color-gris);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.symbols-x:hover, .symbols-o:hover {
+    box-shadow: 1px 0px 5px 2px var(--color-ico);
+}
+
+.name-symbols {
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+#time_wait {
+    font-size: .9rem;
+    font-weight: 500;
+    margin-top: .8rem;
+    color: var(--color-green-esmeralda);
+}
+
+/* -------------------- MODAL ------------------- */
+
+.show-boton-play {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-black-claro);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden-modal {
+    display: none ;
+}
+
+.style-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.text-ready {
+    color: var(--color-gris);
+    font-size: 1.5rem;
+}
+
+.boton_playstart {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-ico);
+    color: var(--color-gris);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#player_nametwo_symbol, #selected_colorsymbols_players {
+    display: none;
+}
+
+/* ALerta */
+
+.mensaje_correcto {
+    font-size: .9rem;
+    color: var(--color-green-esmeralda);
+}
+
+.mensaje_erroneo {
+    font-size: .9rem;
+    color: var(--color-red-oscuro);
+}
+
+/* Symbol select */
+
+.back_select {
+    box-shadow: 1px 0px 5px 2px var(--color-green-esmeralda);
+}
+
+.back_select:hover {
+    box-shadow: 1px 0px 5px 2px var(--color-green-esmeralda);
+}
+
+.back_no_select {
+    pointer-events: none;
+    opacity: .6;
+}
+
+/* Color symbols */
+
+.color_selected_ico {
+    color: var(--color-gris);
+}
+
+.color_no_selected {
+    pointer-events: none;
+    opacity: .6;
+}
+
