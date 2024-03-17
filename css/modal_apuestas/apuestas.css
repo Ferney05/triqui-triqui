@@ -96,13 +96,13 @@
 }
 
 .win_lose {
-    font-size: .9rem;
+    font-size: .8rem;
     color: var(--color-white);
     display: none;
-}
+} 
 
 .apostaron {
-    font-size: .9rem;
+    font-size: .8rem;
     color: var(--color-white);
     display: none;
 }

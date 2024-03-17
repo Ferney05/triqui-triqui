@@ -101,21 +101,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 points_player1.textContent = `${parseInt(points_player1.textContent) + points}`;
                 show_winner.innerText = `Ha ganado ${player1.name}, símbolo ${player1.symbol}.`;
                 show_winner.classList.add('win');
-                // player1.money += parseInt(input__apuestas.value);
-                // player2.money -= parseInt(input__apuestas.value);
+                player1.money += parseInt(input__apuestas.value);
+                player2.money -= parseInt(input__apuestas.value);
             } else {
                 show_winner.style.display = 'block';
                 points_player2.textContent = `${parseInt(points_player2.textContent) + points}`;
                 show_winner.innerText = `Ha ganado ${player2.name}, símbolo ${player2.symbol}.`;
                 show_winner.classList.add('win');
-                // player1.money -= parseInt(input__apuestas.value);
-                // player2.money += parseInt(input__apuestas.value);
+                player1.money -= parseInt(input__apuestas.value);
+                player2.money += parseInt(input__apuestas.value);
             }
 
             gameActive = false;
         } else if (checkDraw()) {
             show_winner.style.display = 'block';
-            show_winner.innerHTML = `Es un empate.`;
+            show_winner.innerText = `Es un empate`;
             show_winner.classList.add('tie');
             gameActive = false;
         } else {
@@ -178,6 +178,8 @@ let player2 = { name: '', symbol: '', color: '#e61154f1', money: 0 };
 apostar_boton.addEventListener('click', () => {
     const valor_apuesta = parseInt(input__apuestas.value);
 
+    
+
     if (!isNaN(valor_apuesta)) {
         player1_money.style.display = 'block';
         player2_money.style.display = 'block';
@@ -192,6 +194,9 @@ apostar_boton.addEventListener('click', () => {
             player1.money -= valor_apuesta;
             player2.money += valor_apuesta; 
         }
+
+        player1.money = 0
+        player2.money = 0
 
         player1_money.innerText = `$ ${player1.money}`;
         player2_money.innerText = `$ ${player2.money}`;

@@ -2,7 +2,7 @@
 @import url('../modal_apuestas/apuestas.css');
 
 body {
-    background-color: var(--color-black);
+    background-color: var(--color-black) !important;
 }
 
 #hidden-playing {
