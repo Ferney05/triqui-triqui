@@ -101,15 +101,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 points_player1.textContent = `${parseInt(points_player1.textContent) + points}`;
                 show_winner.innerText = `Ha ganado ${player1.name}, símbolo ${player1.symbol}.`;
                 show_winner.classList.add('win');
-                player1.money += parseInt(input__apuestas.value);
-                player2.money -= parseInt(input__apuestas.value);
+                // player1.money += parseInt(input__apuestas.value);
+                // player2.money -= parseInt(input__apuestas.value);
             } else {
                 show_winner.style.display = 'block';
                 points_player2.textContent = `${parseInt(points_player2.textContent) + points}`;
                 show_winner.innerText = `Ha ganado ${player2.name}, símbolo ${player2.symbol}.`;
                 show_winner.classList.add('win');
-                player1.money -= parseInt(input__apuestas.value);
-                player2.money += parseInt(input__apuestas.value);
+                // player1.money -= parseInt(input__apuestas.value);
+                // player2.money += parseInt(input__apuestas.value);
             }
 
             gameActive = false;
@@ -135,8 +135,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function displayMoney() {
-        player1_money.innerText = `Dinero: $${player1.money}`;
-        player2_money.innerText = `Dinero: $${player2.money}`;
+        player1_money.innerText = `$${player1.money}`;
+        player2_money.innerText = `$${player2.money}`;
     }
 
     reboot_play.addEventListener('click', () => {
@@ -193,11 +193,8 @@ apostar_boton.addEventListener('click', () => {
             player2.money += valor_apuesta; 
         }
 
-        player1_money.innerText = `$${player1.money}`;
-        player2_money.innerText = `$${player2.money}`;
-
-        player1_money.style.color = player1.money >= 0 ? '#228049' : '#d80000';
-        player2_money.style.color = player2.money >= 0 ? '#228049' : '#d80000';
+        player1_money.innerText = `$ ${player1.money}`;
+        player2_money.innerText = `$ ${player2.money}`;
     } else {
         console.error("La apuesta no es un número válido");
     }

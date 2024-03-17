@@ -3,10 +3,6 @@
     display: none;
 } */
 
-#add-name {
-    /* display: none; */
-}
-
 .add-name {
     grid-row: 2 / 7;
     grid-column: 1 / 2;
