@@ -178,8 +178,6 @@ let player2 = { name: '', symbol: '', color: '#e61154f1', money: 0 };
 apostar_boton.addEventListener('click', () => {
     const valor_apuesta = parseInt(input__apuestas.value);
 
-    
-
     if (!isNaN(valor_apuesta)) {
         player1_money.style.display = 'block';
         player2_money.style.display = 'block';
