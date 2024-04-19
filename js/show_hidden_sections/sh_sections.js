@@ -29,6 +29,10 @@ const hidden__welcome = document.getElementById('hidden__welcome')
 
 const time_wait = document.getElementById('time_wait')
 
+const content_alertinfo = document.querySelector('.content_alertinfo')
+const time_delete = document.querySelector('.time_delete')
+
+
 // ----------------------------------------------------------------------------------------------------------
 
 export function VerificarInputs() {
@@ -160,6 +164,9 @@ export function selectSymbols(){
 }
 
 export function ShowPlayStart() {
+
+    let seconds_info = 10
+
     botonend_play.addEventListener('click', () => {
         section_select_symbols.style.display = 'none';
         hidden__welcome.style.display = 'none';
@@ -168,5 +175,19 @@ export function ShowPlayStart() {
         playing_starting.style.position = 'absolute';
         body.style.backgroundColor = '#1e1e2c';
         hidden_nav_playing.style.display = 'inline-flex';
+        content_alertinfo.style.display = 'block'
+
+        setInterval(() => {
+            if (seconds_info > 0){
+                time_delete.innerHTML = `${seconds_info}`
+                body.classList.add('none_cursor')
+                seconds_info--
+            } else {
+                content_alertinfo.style.display = 'none'
+                body.classList.remove('none_cursor')
+            }
+        }, 1000)
     });
 }
+
+

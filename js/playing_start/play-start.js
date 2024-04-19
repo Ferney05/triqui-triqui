@@ -14,6 +14,10 @@ const apuesta__ = document.getElementById('apuesta__');
 const input__apuestas = document.getElementById('input__apuestas');
 const apostar_boton = document.getElementById('apostar_boton');
 
+const desblock_modal = document.getElementById('desblock_modal')
+
+const board = document.querySelector('.board')
+
 export function ShowNamesPlayers() {
     botonend_play.addEventListener('click', () => {
         name_player1.innerHTML = `${input_name_playerone.value}`;
@@ -200,5 +204,24 @@ apostar_boton.addEventListener('click', () => {
         player2_money.innerText = `$ ${player2.money}`;
     } else {
         console.error("La apuesta no es un número válido");
+    }
+});
+
+
+let status = true;
+
+desblock_modal.addEventListener('click', () => {
+    if (status) {
+        desblock_modal.innerText = 'Bet';
+        status = false
+    } 
+});
+
+board.addEventListener('click', () => {
+    if (status) {
+        desblock_modal.innerHTML = 'blocked'
+        desblock_modal.style.pointerEvents = 'none';
+        desblock_modal.style.opacity = 0.6;
+        status = false;
     }
 });
