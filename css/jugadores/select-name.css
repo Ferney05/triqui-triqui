@@ -3,6 +3,10 @@
     display: none;
 } */
 
+#add-name {
+    display: none;
+}
+
 .add-name {
     grid-row: 2 / 7;
     grid-column: 1 / 2;
@@ -22,18 +26,21 @@
 
 .title-add-name {
     color: var(--color-blue-claro);
+    text-align: center;
 }
 
 .breve-info {
     font-weight: 300;
     color: var(--color-gris);
     font-size: .9rem;
+    text-align: center;
 }
 
 .formulario {
     display: flex;
     gap: 1.5rem;
     align-items: center;
+    justify-content: center;
 }
 
 .players {
@@ -86,6 +93,17 @@
 @media (max-width: 500px){
     .formulario {
         flex-direction: column;
+    }
+
+    .title-add-name {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .breve-info {
+        font-size: .8rem;
+        text-align: center;
     }
 
     #add-name {

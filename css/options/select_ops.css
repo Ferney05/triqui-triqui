@@ -1,0 +1,148 @@
+
+
+@import url('../fonts-colors.css');
+
+.options_playing_pc_person {
+    grid-row: 2 / 7;
+    grid-column: 1 / 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_principal_options {
+    color: var(--color-blue-claro);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.players_options {
+    /* background-color: var(--color-gris); */
+    width: 350px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 40px;
+    border: 1px solid var(--color-blue);
+    cursor: pointer;
+}
+
+.players_options:hover {
+    box-shadow: 2px 1px 20px 5px var(--color-blue);
+}
+
+.simbols_options {
+    display: flex;    
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.title_card {
+    font-size: .8rem;
+    color: var(--color-gris);
+    margin-bottom: 1rem;
+}
+
+.icono_options {
+    display: flex;
+    justify-content: center;
+}
+
+.symbol_x_options, .symbol_o_options {
+    font-size: 2.5rem;
+    color: var(--color-blue);
+}
+
+.flex_options {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.icon_ops {
+    width: 60px;
+}
+
+
+@media (max-width: 600px){
+    .title_principal_options {
+        text-align: center;
+    }
+
+    .title_card {
+        text-align: center;
+    }
+    
+    .players_options {
+        width: 200px;
+    }
+                
+    .symbol_x_options, .symbol_o_options {
+        font-size: 2.5rem;
+        color: var(--color-blue);
+    }
+    
+    .flex_options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .icon_ops {
+        width: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loading {
+    display: none;
+    position: absolute;
+    background-color: var(--color-gris);
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.loading_text {
+    animation: ChangeColor 1s ease-in infinite;
+}
+
+@keyframes ChangeColor {
+    0% {
+        color: var(--color-blue);
+    }
+
+    50% {
+        color: var(--color-blue-claro);
+    }
+
+    75% {
+        color: var(--color-blue);
+    }
+
+    100% {
+        color: var(--color-blue-claro);
+    }
+}

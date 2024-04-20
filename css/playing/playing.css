@@ -182,4 +182,16 @@ body {
         width: 70%;
         margin: 0 0 0 -2rem;
     }    
+
+    .nameplayer-puntos {
+        flex-direction: column;
+    }
+
+    .name__player{
+        font-size: .9rem;
+    }
+
+    .avisa_turno, #palpita {
+        font-size: .8rem;
+    }
 }

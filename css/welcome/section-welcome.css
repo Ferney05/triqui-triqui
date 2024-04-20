@@ -83,4 +83,9 @@ body {
         flex-direction: column;
         gap: 1rem;
     }
+
+    .info_before {
+        text-align: center;
+        font-size: .8rem;
+    }
 }

@@ -22,6 +22,7 @@
 .info-player {
     color: var(--color-gris);
     font-size: .9rem;
+    text-align: center;
 }
 
 .selecting-symbols {
@@ -57,6 +58,7 @@
     font-weight: 500;
     margin-top: .8rem;
     color: var(--color-green-esmeralda);
+    text-align: center;
 }
 
 /* -------------------- MODAL ------------------- */
@@ -141,3 +143,14 @@
     opacity: .6;
 }
 
+@media (max-width: 600px) {
+    .info-player, .text-ready {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #time_wait {
+        text-align: center;
+        font-size: .8rem;
+    }
+}

@@ -122,12 +122,12 @@
                     <form action="" class="formulario">
                         <div class="players">
                             <label for="" class="player-ol">Jugador 1</label>
-                            <input type="text" class="input-name" placeholder="Nombre" id="name_playerone" maxlength="12">
+                            <input type="text" class="input-name" placeholder="Nombre" id="name_playerone" maxlength="8">
                         </div>
 
                         <div class="players">
                             <label for="" class="player-ol">Jugador 2</label>
-                            <input type="text" class="input-name" placeholder="Nombre" id="name_playertwo" maxlength="12">
+                            <input type="text" class="input-name" placeholder="Nombre" id="name_playertwo" maxlength="8">
                         </div>
 
                         <div class="button-sigt">
@@ -160,6 +160,47 @@
                     </div>
                 </form>
             </div>
+        </div>
+
+        <div class="options_playing_pc_person" id="options_plays">
+            <div>
+                <h2 class="title_principal_options">Selecciona tu modo de juego</h2>
+
+                <div class="flex_options">
+                    <div class="players_options" id="play_alone">
+                       <div>
+                            <div class="simbols_options">
+                                <p class="symbol_x_options">O</p>
+                                <p class="symbol_o_options">X</p>
+                            </div>
+                
+                            <h2 class="title_card">Jugar solo</h2>
+
+                            <div class="icono_options">
+                                <img src="img/robot.png" class="icon_ops" alt="">
+                            </div>
+                       </div>
+                    </div>
+
+                    <div class="players_options" id="play_people">
+                        <div>
+                            <div class="simbols_options">
+                                <p class="symbol_x_options">X</p>
+                                <p class="symbol_o_options">O</p>
+                            </div>
+                            <h2 class="title_card">Jugar entre dos personas</h2>
+            
+                            <div class="icono_options">
+                                <img src="img/persons.png" class="icon_ops" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <p class="loading_text">Cargando...</p>
         </div>
 
         <div class="content_alertinfo">

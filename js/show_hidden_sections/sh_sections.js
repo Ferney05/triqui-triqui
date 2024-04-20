@@ -37,7 +37,7 @@ const time_delete = document.querySelector('.time_delete')
 
 export function VerificarInputs() {
     input_name_playerone.addEventListener('keyup', () => {
-        if (input_name_playerone.value.length >= 1) {
+        if (input_name_playerone.value.length >= 3) {
             txt_information_name.classList.remove('mensaje_erroneo')
             txt_information_name.textContent = '¡Nombre del jugador 1 registrado! Ahora ingresa el nombre del jugador 2.';
             txt_information_name.classList.add('mensaje_correcto')
@@ -48,14 +48,14 @@ export function VerificarInputs() {
     });
 
     input_name_playerone.addEventListener('keyup', () => {
-        if (input_name_playerone.value.length >= 1 && input_name_playertwo.value.length >= 1) {
+        if (input_name_playerone.value.length >= 3 && input_name_playertwo.value.length >= 3) {
             txt_information_name.textContent = '¡Nombre del jugador 1 registrado!.';
             txt_information_name.classList.add('mensaje_correcto')
         } 
     });
 
     input_name_playertwo.addEventListener('keyup', () => {
-        if (input_name_playertwo.value.length >= 1) {
+        if (input_name_playertwo.value.length >= 3) {
             txt_information_name.classList.remove('mensaje_erroneo')
             txt_information_name.textContent = '¡Nombre del jugador 2 registrado! Ahora ingresa el nombre del jugador 1.';
             txt_information_name.classList.add('mensaje_correcto')
@@ -66,22 +66,10 @@ export function VerificarInputs() {
     });
 
     input_name_playertwo.addEventListener('keyup', () => {
-        if (input_name_playertwo.value.length >= 1 && input_name_playerone.value.length >= 1) {
+        if (input_name_playertwo.value.length >= 3 && input_name_playerone.value.length >= 3) {
             txt_information_name.textContent = '¡Nombre del jugador 2 registrado!.';
             txt_information_name.classList.add('mensaje_correcto')
         } 
-    });
-}
-
-export function ShowHiddenSections2() {
-    boton_next2.addEventListener('click', () => {
-        if (input_name_playerone.value.length >= 1 && input_name_playertwo.value.length >= 1) {
-            section_add_name.style.display = 'none';
-            section_select_symbols.style.display = 'block';
-        } else {
-            txt_information_name.innerText = 'Los campos no pueden estar vacios.'
-            txt_information_name.classList.add('mensaje_erroneo')
-        }
     });
 }
 

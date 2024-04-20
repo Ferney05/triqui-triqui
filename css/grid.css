@@ -1,6 +1,7 @@
 
 @import url('fonts-colors.css');
 @import url('welcome/section-welcome.css');
+@import url('options/select_ops.css');
 
 * {
     margin: 0;
