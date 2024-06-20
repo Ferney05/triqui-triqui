@@ -113,6 +113,10 @@
 
 
 
+.not_show_play {
+    display: none;
+    color: #b32929;
+}
 
 
 .loading {

@@ -1,4 +1,6 @@
 
+@import url('../write_name/name.css');
+
 #select-symbols {
     display: none;
     position: absolute;

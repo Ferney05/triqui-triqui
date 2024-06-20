@@ -1,5 +1,4 @@
 
-
 // Agg nombres
 
 import { VerificarInputs } from "./show_hidden_sections/sh_sections.js";
@@ -27,8 +26,18 @@ import { show_loading } from "./loading/loading.js";
 
 import { ShowHiddenSections2 } from "./symbols/symbols.js";
 
+// ShowPlayStart Jugar solo
+
+import { ShowPlayStartAlone } from "./loading/loading.js";
+
+
+
+
+
+
 ShowPlayStart()
 ShowNamesPlayers()
 add_event_modal()
 show_loading()
 ShowHiddenSections2()
+ShowPlayStartAlone()

@@ -203,6 +203,7 @@ apostar_boton.addEventListener('click', () => {
         player1_money.innerText = `$ ${player1.money}`;
         player2_money.innerText = `$ ${player2.money}`;
     } else {
+        // CORREGIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
         console.error("La apuesta no es un número válido");
     }
 });

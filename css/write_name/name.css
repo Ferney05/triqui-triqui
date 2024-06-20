@@ -1,0 +1,64 @@
+
+#write_name {
+    display: none;
+}
+
+.write_name_people {
+    grid-column: 1 / 2;
+    grid-row: 2 / 7;
+    padding: 5rem 0 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.write_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.title_text {
+    text-align: center;
+}
+
+.title_write_name {
+    color: var(--color-blue-claro);
+    margin-bottom: .4rem;
+}
+
+.text_alone {
+    color: var(--color-white);
+    font-size: .9rem;
+}
+
+.input_label_name {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.input_label_name > label {
+    font-size: .9rem;
+    color: var(--color-blue);
+}
+
+.input_name_alone {
+    padding: .6rem .3rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.boton_next_alone {
+    padding: .8rem 1rem;
+    border-radius: 10px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
