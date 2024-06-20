@@ -30,6 +30,10 @@ body {
     gap: .5rem;
 }
 
+.icono-soyfer > a {
+    text-decoration: none;
+}
+
 .name-icono {
     color: var(--color-blue);
 }

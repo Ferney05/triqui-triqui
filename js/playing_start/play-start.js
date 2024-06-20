@@ -200,10 +200,10 @@ apostar_boton.addEventListener('click', () => {
         player1.money = 0
         player2.money = 0
 
-        player1_money.innerText = `$ ${player1.money}`;
-        player2_money.innerText = `$ ${player2.money}`;
+        player1_money.innerText = `$${player1.money}`;
+        player2_money.innerText = `$${player2.money}`;
     } else {
-        // CORREGIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+        // CORREGIR
         console.error("La apuesta no es un número válido");
     }
 });
